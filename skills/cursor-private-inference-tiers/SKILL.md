@@ -1,6 +1,6 @@
 ---
 name: cursor-private-inference-tiers
-description: Patch (or restore) Cursor Private Inference.app so every local-provider model gets a reasoning-effort (thinking level) control and 4 local context-window tiers (256K/272K/400K/1M). Version-independent: locate the patch sites in the installed bundles, generate a one-off patch script, apply. Use after upgrading the app, when effort/context controls disappear, or when the user asks to patch/restore thinking levels or context windows.
+description: Patch (or restore) Cursor Private Inference.app so every local-provider model gets a reasoning-effort (thinking level) control and 4 local context-window tiers (256K/272K/400K/1M). Version-independent - locate the patch sites in the installed bundles, generate a one-off patch script, apply. Use after upgrading the app, when effort/context controls disappear, or when the user asks to patch/restore thinking levels or context windows.
 ---
 
 # Cursor Private Inference — Universal Effort & Context Tiers Patch
@@ -20,6 +20,9 @@ This skill records only *what* to change and *how to find it*. The bundles are
 minified and identifiers change between releases (and between the two bundles),
 so never reuse literal strings from a previous run: re-locate every site against
 the installed app, then generate a throwaway patch script for that exact build.
+
+Latest app build (macOS Apple Silicon):
+<https://api2.cursor.sh/updates/download/golden/darwin-arm64/cursor-local/latest>
 
 ## When to Use
 
